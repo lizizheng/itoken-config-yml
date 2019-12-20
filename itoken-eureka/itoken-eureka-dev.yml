@@ -10,10 +10,10 @@ eureka:
       defaultZone: http://peer1:9822/eureka,http://peer2:9823/eureka
 
 ##Spring基本配置
-#spring:
-#  #zipkin链路跟踪地址
-#  zipkin:
-#    base-url: http://localhost:9889
+spring:
+  #zipkin链路跟踪地址
+  zipkin:
+    base-url: http://localhost:9889
 #  #spring boot控制台地址
 #  boot:
 #    admin:
