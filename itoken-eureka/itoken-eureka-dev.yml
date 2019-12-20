@@ -1,0 +1,30 @@
+#spring eureka注册中心dev配置
+
+#配置端口
+server.port:
+  9822
+
+#配置eureka注册中心集群
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:9822/eureka,http://peer2:9823/eureka
+
+#zipkin链路跟踪地址
+spring:
+  zipkin:
+    base-url: http://localhost:9889
+      
+#spring boot控制台地址
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9877
+
+#选择需要对外暴露的路径
+management:
+  endpoints:
+    web: 
+      exposure: 
+        include: \*
