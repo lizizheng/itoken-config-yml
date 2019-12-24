@@ -15,12 +15,12 @@ eureka:
 spring:
   #zipkin链路跟踪地址
   zipkin:
-    base-url: http://192.168.207.165::9889
+    base-url: http://192.168.207.165:9889
   #spring boot控制台地址
   boot:
     admin:
       client:
-        url: http://192.168.207.165::9877
+        url: http://192.168.207.165:9877
 
 ##选择需要对外暴露的路径
 management:
