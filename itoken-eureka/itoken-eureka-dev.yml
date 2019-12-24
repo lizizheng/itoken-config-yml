@@ -8,7 +8,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.207.165::9822/eureka,http://192.168.207.165::9823/eureka
+      defaultZone: http://192.168.207.165:9822/eureka,http://192.168.207.165:9823/eureka
   instance:
     prefer-ip-address: true
 ##Spring基本配置
