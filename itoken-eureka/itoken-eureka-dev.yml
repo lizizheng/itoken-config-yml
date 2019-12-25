@@ -1,8 +1,8 @@
 #spring eureka注册中心dev配置
 
-#配置端口
+#配置端口，此端口固定，docker构建镜像时候映射到9822，9823端口
 server:
-  port: 9822
+  port: 9821
   
 #配置eureka注册中心集群
 eureka:
